@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Destop files/1.png" type="image/x-icon">
+    <title>Temperature Converter</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="containter" style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <h1>Enter temperature</h1>
+        <input type="text" name="input" id="input" placeholder="Enter your current temperature" style="margin: 12px 0;">
+        <select name="temp" id="selector" onchange="getValue()">
+            <option value="default">Choose the Temperature</option>
+            <option value="degree celcius">Degree Celcius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+        </select>
+        <button type="button" onclick="getTemperature()">Check</button>
+    </div>
+</body>
+</html>
